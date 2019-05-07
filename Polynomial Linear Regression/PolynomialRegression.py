@@ -41,8 +41,8 @@ plt.show()
 
 #Visualing the Polynomial linear regression results
 #making data more finer 
-#X_grid =np.arange(min(X),max(X),0.1)
-#X_grid=X_grid.reshape(len(X_grid),1)
+X_grid =np.arange(min(X),max(X),0.1)
+X_grid=X_grid.reshape(len(X_grid),1)
 plt.scatter(X,Y,color='red')
 plt.plot(X,regressor2.predict(polyRegressor.fit_transform(X)),color='blue')
 plt.title("Linear Model")
